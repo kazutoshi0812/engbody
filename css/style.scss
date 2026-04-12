@@ -1,0 +1,17 @@
+// ============================================
+// Main Stylesheet
+// FLOCSS記法に基づいた構成
+// ============================================
+
+// 0. Global（グローバル設定・関数）
+@use "global" as *;
+
+// 1. Foundation（基礎）
+@use "foundation";
+
+// 2. Layout（レイアウト）
+@use "layout";
+
+// 3. Object（オブジェクト）
+@use "object";
+

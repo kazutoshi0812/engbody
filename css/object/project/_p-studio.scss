@@ -1,0 +1,139 @@
+// ============================================
+// Project - Studio
+// ============================================
+
+@use "../../global" as *;
+
+.p-studio {
+    padding: 4.0625rem 0 4.1875rem;
+}
+
+.p-studio__wrapper {
+    max-width: 1192px;
+    margin: 0 auto;
+    width: 90%;
+    @media screen and (min-width: 767px) {
+    }
+}
+
+.c-section-header.p-studio__section-header {
+    max-width: 1110px;
+    margin: 0 auto 2rem;
+}
+
+.p-studio__item {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    @media screen and (min-width: 767px) {
+        margin: 0 1.25rem;
+    }
+}
+
+.p-studio__image {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    @media screen and (min-width: 767px) {
+        max-width: 1110px;
+        width: 100%;
+    }
+}
+
+.p-studio__list {
+    margin-bottom: 4.1875rem;
+}
+
+// arrow＆ドット
+.p-studio .slick-prev.slick-arrow,
+.p-studio .slick-next.slick-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: $color-white;
+    box-shadow: none;
+    z-index: 2;
+    font-size: 0;
+    color: transparent;
+    @media screen and (min-width: 767px) {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+.p-studio .slick-prev.slick-arrow {
+    left: -1.25rem;
+    top: 50%;
+    @media screen and (min-width: 767px) {
+        left: 1.25rem;
+        transform: translate(-50%, -50%);
+    }
+}
+.p-studio .slick-next.slick-arrow {
+    right: -1.25rem;
+    top: 50%;
+    @media screen and (min-width: 767px) {
+        right: 1.25rem;
+        transform: translate(50%, -50%);
+    }
+}
+
+.p-studio .slick-prev.slick-arrow::before,
+.p-studio .slick-next.slick-arrow::before {
+    content: "";
+}
+
+.p-studio .slick-prev.slick-arrow::after,
+.p-studio .slick-next.slick-arrow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-top: 0.25rem solid $color-primary;
+    border-right: 0.25rem solid $color-primary;
+    border-radius: 0.125rem;
+    transform: translate(-50%, -50%);
+}
+
+.p-studio .slick-prev.slick-arrow::after {
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.p-studio .slick-next.slick-arrow::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.slick-dots {
+    // display: flex !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    bottom: -2.1875rem;
+}
+
+.slick-dots li {
+    margin: 0;
+}
+
+.slick-dots li button {
+    width: 0.625rem;
+    height: 0.625rem;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #eaeaea;
+    color: transparent;
+}
+
+.slick-dots li button::before {
+    content: "";
+}
+
+.slick-dots li.slick-active button,
+.slick-dots li.slick-active button:focus {
+    background-color: $color-primary;
+}

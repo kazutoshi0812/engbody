@@ -1,0 +1,44 @@
+// ============================================
+// Base（ベース）
+// ============================================
+
+@use "../global" as *;
+
+// ルートフォント設定
+html {
+    // 23.5rem ~ 47.9375rem
+    font-size: 100%;
+}
+
+// フォント、カラー設定
+body {
+    font-family: $font-text;
+    // color: $color-white;
+    // background-color: $color-black;
+}
+
+// ホバー
+a,
+button,
+label,
+input,
+select,
+textarea,
+.c-button {
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+
+.p-parts__title {
+    font-size: 1.875rem;
+    margin: 1.875rem 0 3.125rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.p-section {
+    padding: 0 1rem;
+}

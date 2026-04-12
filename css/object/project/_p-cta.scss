@@ -1,0 +1,53 @@
+// ============================================
+// Project - cta
+// ============================================
+
+@use "../../global" as *;
+
+.p-cta__image-sp {
+    display: block;
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
+}
+
+.p-cta__image-pc {
+    display: none;
+    @media screen and (min-width: 767px) {
+        display: block;
+    }
+}
+
+.p-cta__content {
+    background: $color-primary;
+    height: auto;
+    padding: 1.8125rem 0 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 767px) {
+        padding: 3.125rem 0;
+    }
+}
+
+.p-cta__title {
+    display: inline-flex;
+    align-items: center;
+    color: $color-white;
+    font-weight: 700;
+    font-size: clamp(1.625rem, 4vw, 4rem);
+    font-family: "josefin-sans";
+    margin-bottom: 1.25rem;
+}
+
+.p-cta__emoji-container {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.4em;
+}
+
+.p-cta__emoji-container img {
+    width: 1.2em;
+    height: auto;
+    display: block;
+}

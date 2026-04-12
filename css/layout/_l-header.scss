@@ -1,0 +1,22 @@
+// ============================================
+// Layout - Header
+// ============================================
+
+@use "../global" as *;
+
+.l-header {
+    height: 3.75rem;
+    align-items: center;
+    padding-left: 1.25rem;
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    @media screen and (min-width: 767px) {
+        width: 100%;
+        padding: 2.1875rem 0 0 2.1875rem;
+    }
+}
+
+.l-header__logo-image {
+    width: clamp(6.0625rem, 15vw, 11.25rem);
+}

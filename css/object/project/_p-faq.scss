@@ -1,0 +1,111 @@
+// ============================================
+// Project - FAQ
+// ============================================
+
+@use "../../global" as *;
+
+.p-faq {
+    margin: 4.0625rem 0 3.75rem 0;
+    padding: 0 1.25rem;
+}
+
+.p-faq__wrapper {
+    max-width: 1110px;
+    margin-inline: auto;
+}
+
+.c-section-header.p-faq__section-header {
+    padding: 0;
+}
+
+.faq-item {
+    border-bottom: 0.0625rem solid #ddd;
+    padding: 1.625rem 0 1.3125rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.faq-question {
+    list-style: none;
+    position: relative;
+    padding-right: 1.5625rem;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    line-height: 0;
+    transition: all 0.3s ease;
+}
+
+/* summary */
+summary.faq-question {
+    list-style: none;
+    cursor: pointer;
+}
+
+summary.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+summary.faq-question::marker {
+    display: none;
+}
+
+.faq-question span,
+.faq-answer span {
+    color: $color-primary;
+    margin-right: 1.25rem;
+    font-size: 1.25rem;
+    font-family: "Josefin Sans";
+    font-weight: 700;
+}
+
+.faq-answer span {
+    margin-left: 0.1875rem;
+}
+
+.faq-answer {
+    margin-top: 1.9375rem;
+    color: #555;
+    line-height: 1.6;
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+        max-height 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.faq-answer-text {
+    font-size: 0.9375rem;
+    color: $color-black;
+    line-height: calc(1.5rem / 0.9375rem);
+    font-weight: 300;
+}
+
+.faq-item.is-open .faq-answer {
+    max-height: 62.5rem;
+    opacity: 1;
+}
+
+.faq-question-down-arrow {
+    position: absolute;
+    top: -0.3125rem;
+    right: 0.625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    display: inline-block;
+    border-left: 0.25rem solid $color-primary;
+    border-bottom: 0.25rem solid $color-primary;
+    border-radius: 0.125rem;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+/* details */
+details[open] .faq-question-down-arrow,
+.faq-item.is-open .faq-question-down-arrow {
+    transform: rotate(135deg);
+    top: -0.1875rem;
+}

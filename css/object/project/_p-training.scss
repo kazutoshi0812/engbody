@@ -1,0 +1,15 @@
+// ============================================
+// Project - Training
+// ============================================
+
+@use "../../global" as *;
+
+.p-training {
+    margin-bottom: 4.063rem;
+}
+
+.p-training__button--wrapper {
+    @media screen and (min-width: 767px) {
+        display: none;
+    }
+}

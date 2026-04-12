@@ -1,0 +1,121 @@
+// ============================================
+// Component - Button
+// ============================================
+
+@use "../../global" as *;
+
+// ---------------------------------------------------------------------------
+// Base: 汎用ボタン（<a> ベース / Modifier で色・サイズを制御）
+// ---------------------------------------------------------------------------
+.c-button {
+    display: flex;
+    width: 13.75rem;
+    height: 2.8125rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition:
+        opacity 0.3s ease,
+        transform 0.2s ease;
+}
+
+.c-button:hover {
+    opacity: 0.9;
+}
+
+.c-button:active {
+    transform: scale(0.98);
+}
+
+@media screen and (min-width: 1024px) {
+    .c-button {
+        padding: 2.1875rem 3.3125rem;
+        font-size: 1.25rem;
+        width: 23.125rem;
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Modifier: ピンク背景・白文字・カプセル型（無料カウンセリング / Come join us! 用）
+// ---------------------------------------------------------------------------
+.c-button--primary {
+    background-color: $color-primary;
+    color: $color-white;
+    margin: 0 auto;
+}
+
+.p-cta__button {
+    background-color: $color-white;
+    color: $color-primary;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    font-family: $font-text;
+    width: 18.75rem;
+}
+
+// food button
+.p-training__button--wrapper > a {
+    margin-inline: auto;
+    display: flex;
+    width: 18.75rem;
+    height: 3.3125rem;
+}
+
+// footer arrow
+.footer-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: $color-white;
+    box-shadow: none;
+    z-index: 2;
+    font-size: 0;
+    color: transparent;
+    right: 1.25rem;
+    top: 65%;
+    @media screen and (min-width: 767px) {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+.footer-arrow::before {
+    content: "";
+}
+
+.footer-arrow::after {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    top: 53%;
+    left: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-top: 0.1875rem solid $color-primary;
+    border-right: 0.1875rem solid $color-primary;
+    border-radius: 0.125rem;
+    @media screen and (min-width: 767px) {
+        width: 1.0625rem;
+        height: 1.0625rem;
+        border-top: 0.3125rem solid $color-primary;
+        border-right: 0.3125rem solid $color-primary;
+    }
+}
+
+// footer arrow only: hover/active の見た目変更を無効化
+.footer-arrow:hover {
+    opacity: 1;
+    background: $color-white;
+}
+
+.footer-arrow:active {
+    transform: none;
+    opacity: 1;
+    background: $color-white;
+}

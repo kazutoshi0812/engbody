@@ -1,0 +1,20 @@
+// ============================================
+// Function（関数・Mixin）
+// ============================================
+
+@use "setting" as *;
+@use "sass:math";
+
+// メディアクエリ：モバイル
+@mixin mobile {
+    @media screen and (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+// Figma letter-spacing（% → em）
+@mixin figma-letter-spacing($spacing) {
+    // Figma 25% → 0.25em
+    letter-spacing: math.div($spacing, 100) * 1em;
+}
+

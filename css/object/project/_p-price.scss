@@ -1,0 +1,136 @@
+// ============================================
+// Project - Price
+// ============================================
+
+@use "../../global" as *;
+
+.p-price {
+    padding-top: 2.5rem;
+    background-color: $color-primary;
+    margin-top: -0.4375rem;
+    @media screen and (min-width: 1200px) {
+        padding: 2.5rem 1.25rem 0;
+    }
+}
+
+.p-price__inner {
+    max-width: 1110px;
+    @media screen and (min-width: 767px) {
+        margin: 0 auto;
+    }
+}
+
+.c-section-header.p-price__section-header {
+    margin-bottom: 0;
+}
+
+.c-section-header__title.p-price__section-title,
+.c-section-header__subtitle.p-price__section-subtitle {
+    color: $color-white;
+}
+
+.p-price__wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.p-price__wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.p-price-hint {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0.25rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0.625rem;
+    color: #fff;
+    font-size: 0.75rem;
+    line-height: 1;
+    pointer-events: none;
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
+}
+
+.p-price-hint.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.p-price-hint__arrow {
+    display: inline-block;
+    width: 1.625rem;
+    height: 0.625rem;
+    position: relative;
+}
+
+.p-price-hint__arrow::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background-color: $color-white;
+    transform: translateY(-50%);
+}
+
+.p-price-hint__arrow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-top: 0.125rem solid $color-white;
+    border-right: 0.125rem solid $color-white;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.p-price-hint__text {
+    white-space: nowrap;
+    font-size: 0.625rem;
+}
+
+.p-price-card__list {
+    column-gap: 1.25rem;
+    padding: 1.875rem 1.25rem 2.5rem;
+    margin: 0;
+    list-style: none;
+    scroll-snap-type: x mandatory;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+    @media screen and (min-width: 1200px) {
+        padding: 1.6875rem 0 2.5rem;
+    }
+}
+
+.p-price-card__item {
+    flex: 0 0 auto;
+    min-width: 17.5rem;
+    scroll-snap-align: start;
+    @media screen and (min-width: 767px) {
+        width: 100%;
+    }
+}

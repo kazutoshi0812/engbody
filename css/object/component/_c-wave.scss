@@ -1,0 +1,10 @@
+// ============================================
+// Component - Wave
+// ============================================
+
+@use "../../global" as *;
+
+.c-bottom-wave {
+    transform: rotate(180deg);
+    margin-top: -1px;
+}

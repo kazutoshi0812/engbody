@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="robots" content="noindex" />
+        <!-- meta情報 -->
+        <title>パーツページ</title>
+        <meta name="description" content="engbody" />
+        <meta name="keywords" content="engbody" />
+        <!-- ogp -->
+        <meta property="og:title" content="engbody" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="ogp/ogp.png" />
+        <meta property="og:site_name" content="engbody" />
+        <meta property="og:description" content="engbody" />
+
+        <!-- 検索エンジンにインデックスしないよう指示 -->
+        <meta name="robots" content="noindex, nofollow" />
+        <!-- Googleのクローラーにインデックスしないよう指示 -->
+        <meta name="googlebot" content="noindex, nofollow" />
+        <!-- Bingのクローラーにインデックスしないよう指示 -->
+        <meta name="msnbot" content="noindex, nofollow" />
+        <!-- Yahooのクローラーにインデックスしないよう指示 -->
+        <meta name="slurp" content="noindex, nofollow" />
+        <!-- ファビコン -->
+        <link rel="icon" href="./assets/icons/favicon-2.png" type="image/png" />
+        <link rel="shortcut icon" href="./assets/icons/favicon-2.png" />
+        <!-- Adobe Fonts (Typekit) -->
+        <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+        <link rel="stylesheet" href="https://use.typekit.net/mla5jrm.css" />
+        <!-- css -->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <h1 class="p-parts__title">パーツページ</h1>
+
+        <!-- training section -->
+        <li class="c-training__card-item">
+            <img class="c-training__card--image" src="./assets/img/about-fitness.png" alt="セッションの様子の画像" />
+            <div class="c-training__card--container">
+                <p class="c-training__card--title">Training</p>
+                <p class="c-training__card--subtitle">
+                    セッションはすべて英語。<br />
+                    LAさながらの環境
+                </p>
+                <p class="c-training__card--text">
+                    ネイティブスピーカーによる50分のパーソナルトレーニングはすべて英語です！アップテンポの洋楽が流れる空間でテンション高めのトレーナーが英語であなたのトレーニングを盛り上げてくれます。ダイエットでよく使う英語をまとめたオリジナルテキストもあるのでスピーキング学習もバッチリです！<br />
+                    英語に苦手意識がある方は日本人トレーナーも選べますのでご安心してください。
+                </p>
+            </div>
+        </li>
+
+        <!-- button -->
+        <!-- Base: 汎用ボタン（Modifier で色・サイズを制御） -->
+        <a href="#" class="c-button">ボタン</a>
+
+        <!-- Modifier: ピンク背景・白文字・カプセル型（無料カウンセリング / Come join us! 用） -->
+        <a href="#" class="c-button c-button--primary">無料カウンセリングを受ける</a>
+        <a href="#" class="c-button p-cta__button">無料カウンセリングを受ける</a>
+
+        <!-- section header：セクション見出し共通パーツ -->
+        <!-- 通常パターン（白背景用） -->
+        <div class="c-section-header">
+            <h2 class="c-section-header__title">Our Trainer</h2>
+            <p class="c-section-header__subtitle">トレーナー</p>
+        </div>
+
+        <!-- 反転カラー（ピンク背景用） -->
+        <div class="p-parts__demo-bg-pink">
+            <div class="c-section-header c-section-header--light">
+                <h2 class="c-section-header__title">Price</h2>
+                <p class="c-section-header__subtitle">料金</p>
+            </div>
+        </div>
+
+        <!-- staff card -->
+        <ul class="c-trainer__card-list">
+            <li class="c-trainer__card-item">
+                <div class="c-trainer__card-image-wrapper">
+                    <img class="c-trainer__card-image" src="./assets/img/trainer01.png" width="750" height="730" alt="スタッフの画像" />
+                </div>
+                <div class="c-trainer__card--container">
+                    <p class="c-trainer__card--text">こんにちは！英語で楽しくトレーニングしましょう。日本語が話せますのでご安心ください。</p>
+                </div>
+            </li>
+        </ul>
+
+        <!-- price card -->
+        <ul class="p-price-card__list">
+            <li class="p-price-card__item">
+                <p class="p-price-card__course-title">週1コース</p>
+                <div class="p-price-card__course-price">¥20,000</div>
+                <p class="p-price-card__admission-fee">（入会金 ¥10000）</p>
+                <ul class="p-price-card__detail-list">
+                    <li class="p-price-card__detail-item">
+                        <span class="p-price-card__detail-label">レンタル</span>
+                        <span class="p-price-card__detail-value">タオル、ウェア、プロテイン無料</span>
+                    </li>
+                    <li class="p-price-card__detail-item">
+                        <span class="p-price-card__detail-label">レストラン</span>
+                        <span class="p-price-card__detail-value">使用不可</span>
+                    </li>
+                    <li class="p-price-card__detail-item">
+                        <span class="p-price-card__detail-label">食事指導</span>
+                        <span class="p-price-card__detail-value">無し</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <button class="slick-next slick-arrow footer-arrow" aria-label="Next" type="button" style="">Next</button>
+    </body>
+</html>
