@@ -50,13 +50,20 @@ summary.faq-question::marker {
     display: none;
 }
 
-.faq-question span,
+.faq-question-label,
 .faq-answer span {
     color: $color-primary;
     margin-right: 1.25rem;
     font-size: 1.25rem;
     font-family: "Josefin Sans";
     font-weight: 700;
+}
+
+.faq-question-text {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    line-height: normal;
 }
 
 .faq-answer span {

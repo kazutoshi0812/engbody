@@ -307,6 +307,22 @@ textarea:hover,
   font-weight: 300;
   line-height: 1.7;
 }
+@media screen and (min-width: 700px) {
+  .c-training__card--text br {
+    display: none;
+  }
+}
+@media screen and (min-width: 767px) {
+  .c-training__card--text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .c-training__card--text.c-food__card--text {
+    letter-spacing: 0.01em;
+  }
+}
 
 .c-food__card--title {
   color: #00b21b;
@@ -389,6 +405,12 @@ textarea:hover,
   font-family: "ヒラギノ角ゴシック";
   font-weight: 600;
   color: #eb51c2;
+}
+@media screen and (min-width: 767px) {
+  .p-price-card__course-title {
+    line-height: 0;
+    margin: 18px 0 10px;
+  }
 }
 
 .p-price-card__course-price {
@@ -508,6 +530,7 @@ textarea:hover,
     padding: 2.1875rem 3.3125rem;
     font-size: 1.25rem;
     width: 23.125rem;
+    font-weight: normal;
   }
 }
 .c-button--primary {
@@ -639,7 +662,6 @@ textarea:hover,
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  height: 25.625rem;
 }
 
 .p-hero__image-sp {
@@ -676,7 +698,7 @@ textarea:hover,
 .p-hero__title-inner {
   position: absolute;
   bottom: 10%;
-  padding-left: clamp(1.25rem, 1.25rem + 8.9375rem * (100vw - 23.5rem) / 66.5rem, 10.1875rem);
+  padding-left: clamp(1.25rem, 1.25rem + 8.9375 * (100vw - 23.5rem) / 66.5, 10.1875rem);
   padding-right: 1.25rem;
   display: flex;
   flex-direction: column;
@@ -722,6 +744,11 @@ textarea:hover,
   padding: 0.125rem 0.25rem 0.25rem 0.375rem;
   display: inline-block;
 }
+@media screen and (min-width: 767px) {
+  .p-hero__sub-title {
+    margin: 1.25rem 0 1.875rem;
+  }
+}
 
 .p-hero__catch-copy-wrapper {
   padding: 0 1.25rem;
@@ -736,7 +763,7 @@ textarea:hover,
   font-style: italic;
   line-height: 0.9824561404;
   color: #eb51c2;
-  padding-bottom: 0.875rem;
+  padding-bottom: 1.75rem;
 }
 
 .p-hero__catch-copy-sub-title {
@@ -744,6 +771,11 @@ textarea:hover,
   margin: 0.1875rem 0 1.5625rem;
   font-size: clamp(1rem, 3vw, 2rem);
   font-weight: 700;
+}
+@media screen and (min-width: 767px) {
+  .p-hero__catch-copy-sub-title {
+    font-weight: normal;
+  }
 }
 
 .p-hero__catch-copy-sub-title span {
@@ -759,6 +791,7 @@ textarea:hover,
   .p-hero__catch-copy-text {
     text-align: center;
     font-size: 1rem;
+    line-height: 32px;
   }
 }
 
@@ -1165,13 +1198,20 @@ summary.faq-question::marker {
   display: none;
 }
 
-.faq-question span,
+.faq-question-label,
 .faq-answer span {
   color: #eb51c2;
   margin-right: 1.25rem;
   font-size: 1.25rem;
   font-family: "Josefin Sans";
   font-weight: 700;
+}
+
+.faq-question-text {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  line-height: normal;
 }
 
 .faq-answer span {
