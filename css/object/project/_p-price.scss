@@ -119,11 +119,16 @@
     list-style: none;
     scroll-snap-type: x mandatory;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) 0.05rem;
     gap: 1.875rem;
     @media screen and (min-width: 1200px) {
         padding: 1.6875rem 0 2.5rem;
     }
+}
+
+.p-price-card__list::after {
+    content: "";
+    grid-column: 4;
 }
 
 .p-price-card__item {

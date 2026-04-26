@@ -6,6 +6,7 @@
 
 .p-cta__image-sp {
     display: block;
+    width: 100%;
     @media screen and (min-width: 767px) {
         display: none;
     }
@@ -15,6 +16,7 @@
     display: none;
     @media screen and (min-width: 767px) {
         display: block;
+        width: 100%;
     }
 }
 

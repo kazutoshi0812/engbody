@@ -97,7 +97,7 @@ summary.faq-question::marker {
 
 .faq-question-down-arrow {
     position: absolute;
-    top: -0.3125rem;
+    top: 25%;
     right: 0.625rem;
     width: 0.625rem;
     height: 0.625rem;
@@ -114,5 +114,5 @@ summary.faq-question::marker {
 details[open] .faq-question-down-arrow,
 .faq-item.is-open .faq-question-down-arrow {
     transform: rotate(135deg);
-    top: -0.1875rem;
+    top: 35%;
 }

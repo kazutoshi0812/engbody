@@ -66,24 +66,30 @@
 .p-studio .slick-prev.slick-arrow {
     left: -1.25rem;
     top: 50%;
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
         left: 1.25rem;
         transform: translate(-50%, -50%);
+    }
+    @media screen and (min-width: 1300px) {
+        left: 0.25%;
     }
 }
 .p-studio .slick-next.slick-arrow {
     right: -1.25rem;
     top: 50%;
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
         right: 1.25rem;
         transform: translate(50%, -50%);
     }
+    @media screen and (min-width: 1300px) {
+        right: 0.25%;
+    }
 }
 
-.p-studio .slick-prev.slick-arrow::before,
-.p-studio .slick-next.slick-arrow::before {
-    content: "";
-}
+// .p-studio .slick-prev.slick-arrow::before,
+// .p-studio .slick-next.slick-arrow::before {
+//     content: "";
+// }
 
 .p-studio .slick-prev.slick-arrow::after,
 .p-studio .slick-next.slick-arrow::after {
