@@ -875,8 +875,8 @@ textarea:hover,
 }
 
 .p-trainer__tab-container label:has(:checked) {
-  border-bottom: 0.0625rem solid #ffffff;
-  color: #ffffff;
+  border-bottom: 0.0625rem solid #fff;
+  color: #fff;
 }
 
 .p-trainer__tab-container label:has(:checked) + div {
@@ -1190,7 +1190,7 @@ textarea:hover,
 }
 
 .faq-item {
-  border-bottom: 0.0625rem solid #ddd;
+  border-bottom: 0.0625rem solid #cccccc;
   padding: 1.625rem 0 1.3125rem;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -1243,7 +1243,7 @@ summary.faq-question::marker {
 
 .faq-answer {
   margin-top: 1.9375rem;
-  color: #555;
+  color: #111111;
   line-height: 1.6;
   display: flex;
   max-height: 0;

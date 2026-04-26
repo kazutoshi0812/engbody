@@ -86,11 +86,6 @@
     }
 }
 
-// .p-studio .slick-prev.slick-arrow::before,
-// .p-studio .slick-next.slick-arrow::before {
-//     content: "";
-// }
-
 .p-studio .slick-prev.slick-arrow::after,
 .p-studio .slick-next.slick-arrow::after {
     content: "";
@@ -114,7 +109,6 @@
 }
 
 .slick-dots {
-    // display: flex !important;
     display: flex;
     justify-content: center;
     align-items: center;

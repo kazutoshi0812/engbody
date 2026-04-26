@@ -1,7 +1,6 @@
 // ============================================
 // Project - Trainer
 // ============================================
-// ルール：ネストと＆（親参照）は使用しない。セレクタはフラットに記述する。
 
 @use "../../global" as *;
 
@@ -28,7 +27,6 @@
 .p-trainer__tab-container {
     display: flex;
     flex-wrap: wrap;
-    // max-width: 500px;
     @media screen and (min-width: 767px) {
         max-width: 1110px;
         margin: 0 auto;
@@ -59,13 +57,11 @@
 .p-trainer__tab-container > div {
     display: none;
     width: 100%;
-    // padding: 1.5em 1em;
-    // background-color: #fff;
 }
 
 .p-trainer__tab-container label:has(:checked) {
-    border-bottom: 0.0625rem solid #ffffff;
-    color: #ffffff;
+    border-bottom: 0.0625rem solid $color-white;
+    color: $color-white;
 }
 
 .p-trainer__tab-container label:has(:checked) + div {

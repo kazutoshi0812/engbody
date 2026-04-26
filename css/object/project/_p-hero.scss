@@ -45,20 +45,10 @@
     position: absolute;
     bottom: 10%;
     padding-left: clamp(1.25rem, calc(1.25rem + 8.9375 * (100vw - 23.5rem) / 66.5), 10.1875rem);
-    // padding-left: clamp(1.25rem, 1.25rem + 8.9375rem * ((100vw - 23.5rem) / 66.5rem), 10.1875rem);
     padding-right: 1.25rem;
     display: flex;
     flex-direction: column;
 }
-
-// .p-hero__title-inner {
-//     position: absolute;
-//     bottom: 10%;
-//     padding-left: clamp(1.25rem, calc(1.25rem + 8.9375rem * ((100vw - 23.5rem) / 66.5rem)), 10.1875rem);
-//     padding-right: 1.25rem;
-//     display: flex;
-//     flex-direction: column;
-// }
 
 .p-hero__title {
     margin: 0;
